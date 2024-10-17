@@ -1,0 +1,5 @@
+a = input('a=')
+b = input('b=')
+c = input('c=')
+surface_area= ((2*a*b)+(2*b*c)+(2*a*c))
+f'The surface area of a cuboid is: {surface_area}')
