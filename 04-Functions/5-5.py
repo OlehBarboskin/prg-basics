@@ -1,5 +1,3 @@
-
-
 price = input('price=')
 discount = input('discount=')
 aftdiscount = price * (discount/100)
