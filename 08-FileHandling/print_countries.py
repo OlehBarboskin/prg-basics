@@ -2,5 +2,7 @@
 # Reads from file, line by line
 #
 with open('countries.txt', 'r') as file:
+    p = 1
     for line in file:
-        print(line, end="")
+        print(str(p) + " " + line, end ='')
+        p += 1
