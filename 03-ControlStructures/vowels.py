@@ -6,7 +6,7 @@ vowels = "aeiouAEIOU"
 vowel_count = 0
 
 # Count vowels in the text
-for char in text:
+while char in text:
     if char in vowels:
         vowel_count += 1
 
