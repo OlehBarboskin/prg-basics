@@ -1,9 +1,10 @@
 def sum_digits(number):
-   a = int (input abs(("")))
-    thing = str(a)
-   for thing in 
-    return ...
+    total = 0
+    for digit in str(abs(number)):
+        total += int(digit)
+    return total
 
-any_number = int(input('Enter integer number: '))
-result = sum_digits(...)
-print('The sum of the digits in the number ... is ...')
+
+if __name__ == '__main__':
+    number = int(input('Enter a number: '))
+    print(f'The sum of the digits in the number {number} is {sum_digits(number)}')

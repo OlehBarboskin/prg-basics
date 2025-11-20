@@ -1,8 +1,12 @@
-name = 'Oleh'   # replace Anna with your name
-surname = 'Barboskin' # replace May with your surname
-characters_in_name = len(name)
-characters_in_surname = len(surname)
-full_name = len(name) + len(surname)
-print(f'Your name has {characters_in_name} characters')
-print(f'Your surname has {characters_in_surname} characters')
-print(f'Your full name has {full_name}') # with a space between name and surname
+def time_string(hours, minutes, time_format):
+    if time_format == '24':
+        return f"{hours:02d}:{minutes:02d}"
+    else:
+        suffix = "am" if hours < 12 else "pm"
+        hour12 = hours % 12
+        if hour12 == 0:
+            hour12 = 12
+        return f"{hour12}:{minutes:02d}{suffix}"
+print(time_string(14,30,'24'))  # Should print 02:30
+print(time_string(3,50,'12'))  # Should print 03:50
+

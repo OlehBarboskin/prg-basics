@@ -1,4 +1,11 @@
-age = int(input('Enter age: '))
-no_tax = age <= 26
-if no_tax 
-print(f'Exemption from paying taxes: {no_tax}')
+def f(amount_to_pay):
+    coins = 0
+    coins += amount_to_pay // 5
+    amount_to_pay = amount_to_pay % 5
+    coins += amount_to_pay // 2
+    amount_to_pay = amount_to_pay % 2
+    coins += amount_to_pay
+    return coins
+
+if __name__ == '__main__':
+    print(f(8))

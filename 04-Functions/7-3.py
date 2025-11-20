@@ -1,11 +1,18 @@
-def input_string(message):
-    return input(message)
+def f(number,even):
+    sum = 0
+    formated_number = str(number)
+    if even is True:
+        for char in formated_number:
+            if int(char) % 2 == 0:
+                sum += int(char)
+            else:
+                continue
+    if even is False:
+        for char in formated_number:
+            if int(char) % 2 != 0:
+                sum += int(char)
+            else:
+                continue
 
-def input_integer(message):
-    return int(input(message))
-
-if __name__ == "__main__":
-    print("Please enter a string:")
-    name = input_string("Name: ")
-    age = input_integer("Age: ")
-    print(f'Hello, {name}. You are {age} years old.')
+if __name__ == '__main__':
+    print(f(4,True))

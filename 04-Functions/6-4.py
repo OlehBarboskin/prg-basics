@@ -1,3 +1,3 @@
-employee = "Mr. John May, born on 1998-02-16"
-print(f'Name: {employee[4:8]}')
-print(f'Surname: {employee[9:12]}')
+from first import month
+
+print(f'The name of the month 4 is {month(4)}')

@@ -1,5 +1,6 @@
-a = input('a=')
-b = input('b=')
-c = input('c=')
-surface_area= ((2*a*b)+(2*b*c)+(2*a*c))
-f'The surface area of a cuboid is: {surface_area}')
+def triange_area(a,b,c):
+    s = (a + b + c) / 2
+    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+    return area
+
+print(f'The area of ​​a triangle with sides 3, 4, and 5 is {triange_area(3, 4, 5)}')
