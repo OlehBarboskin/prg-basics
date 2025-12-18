@@ -1,7 +1,11 @@
-def weekday(n):
-      weekdays = ["Monday", "Tuesday", "Wednesday",
-         "Thursday", "Friday", "Saturday", "Sunday"]
-      return weekdays[n - 1]
-print(weekday(1))
-print (weekday(7))
-     
+# 3x3 Tic-Tac-Toe board
+tic_tac_toe_board = [
+   ['X', 'O', 'X'],
+   [' ', 'X', 'O'],
+   ['O', ' ', 'X']
+]
+
+for row in tic_tac_toe_board:
+    for element in row:
+        print(element, end='')
+    print()

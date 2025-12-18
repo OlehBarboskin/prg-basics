@@ -1,22 +1,15 @@
-test_results = [
-   False, True, False, True, True,
-   True, True, False, True, True,
-   False, True, True, True, False
+matrix = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
 ]
-# calculates the number of test questions
-question_number = len(test_results)
-print (question_number)
 
-# calculates the number of correct answers
-correct_answer = 0
-incorrect_answer = 0
-for answer in test_results:
-   if answer is True:
-      correct_answer = (correct_answer + 1)
-   else:
-      incorrect_answer = (incorrect_answer) + 1
+def change_matrix(matrix):
+    for row in range(len(matrix)):
+        for col in range(len(matrix[row])):
+            matrix [0][0] = 1
+            matrix [1][1] = 1
+            matrix [2][2] = 1
+        return matrix
 
-print (f'Correct {correct_answer}')
-print (f'Incorrect {incorrect_answer}')
-percenage = correct_answer * 100 / question_number
-print (percenage)
+print(change_matrix(matrix))
